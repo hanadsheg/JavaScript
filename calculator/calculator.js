@@ -22,9 +22,3 @@ const zero_button = document.getElementById("zero");
 const display = document.getElementById("display");
 
 
-class Calculator {
-  constructor() {
-    this.currentInput = "";
-    this.previousInput = "";
-    this.operation = null;
-  }
