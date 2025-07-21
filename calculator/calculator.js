@@ -22,3 +22,6 @@ const zero_button = document.getElementById("zero");
 const display = document.getElementById("display");
 
 
+function getNumber(){
+  number
+}
