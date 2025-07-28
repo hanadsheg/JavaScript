@@ -55,3 +55,13 @@ function Negate(){
     display.textContent = eval(display.textContent) * -1;
   }
 }
+
+function switchTheme() {
+  const themeLink = document.getElementById("theme");
+  
+  if (themeLink.getAttribute("href") === "light.css") {
+    themeLink.setAttribute("href", "dark.css");
+  } else {
+    themeLink.setAttribute("href", "light.css");
+  }
+}

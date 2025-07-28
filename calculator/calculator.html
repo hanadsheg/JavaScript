@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="calculator.css">
+    <link id = "theme"rel="stylesheet" href="light.css">
     <title>Calculator</title>
   </head>
   <body>
@@ -25,7 +25,7 @@
           <button id = "one" onclick = "showText('1')">1</button>
           <button id = "zero" onclick = "showText('0')">0</button>
           <button id = "decimal" onclick = "showText('.')">.</button>
-          <button id = "nd">N/D</button>
+          <button id = "nd" onclick = "switchTheme()">N/D</button>
         </div>
         <div class = "operand-container">
           <button id = "divide" onclick = "showText(' / ')">÷</button>
