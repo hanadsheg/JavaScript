@@ -2,7 +2,6 @@
 
 This is a simple web-based calculator built with **HTML**, **CSS**, and **JavaScript**, featuring a **light/dark theme toggle**. It's a beginner-friendly project to help you understand web development concepts such as layout design, DOM manipulation, and event handling.
 
-![Divide Logo](./divide-dark.webp)
 
 ---
 
