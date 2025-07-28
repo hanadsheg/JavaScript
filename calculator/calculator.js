@@ -21,7 +21,37 @@ const zero_button = document.getElementById("zero");
 
 const display = document.getElementById("display");
 
+resultShowing = 0;
 
-function getNumber(){
-  number
+
+function showText(text){
+  if (resultShowing == 1) {
+    clearDisplay();
+    resultShowing = 0;
+  }
+  display.textContent += text;
+}
+
+function clearDisplay() {
+  resultShowing = 0;
+  display.textContent = "";
+}
+
+function Calculate() {
+  resultShowing = 0;
+  try{
+    const result = eval(display.textContent);
+    console.log(result);
+    display.textContent = result;
+    resultShowing = 1;
+  } catch (error) {
+    console.error("Error evaluating expression:", error);
+    display.textContent = "Error";
+  }
+}
+
+function Negate(){
+  if (resultShowing == 1) {
+    display.textContent = eval(display.textContent) * -1;
+  }
 }

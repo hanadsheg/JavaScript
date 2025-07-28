@@ -2,41 +2,41 @@
 <html>
   <head>
     <link rel="stylesheet" href="calculator.css">
-    <script src="calculator.js"></script>
     <title>Calculator</title>
   </head>
   <body>
     <div class ="calculator-container">
       <div class = "display-container">
-        <p id="display">YHH</p>
+        <p id= "display" ></p>
       </div>
       <div class = "button-container">
         <div class = "number-container">
-          <button id = "clear">AC</button>
-          <button id = "negate">+/-</button>
+          <button id = "clear" onclick = "clearDisplay()">AC</button>
+          <button id = "negate" onclick = "Negate()">+/-</button>
           <button id = "percent">%</button>
-          <button id = "nine">9</button>
-          <button id = "eight">8</button>
-          <button id = "seven">7</button>
-          <button id = "six">6</button>
-          <button id = "five">5</button>
-          <button id = "four">4</button>
-          <button id = "three">3</button>
-          <button id = "two">2</button>
-          <button id = "one">1</button>
-          <button id = "zero">0</button>
-          <button id = "decimal">.</button>
+          <button id = "nine" onclick = "showText('9')">9</button>
+          <button id = "eight" onclick = "showText('8')">8</button>
+          <button id = "seven" onclick = "showText('7')">7</button>
+          <button id = "six" onclick = "showText('6')">6</button>
+          <button id = "five" onclick = "showText('5')">5</button>
+          <button id = "four" onclick = "showText('4')">4</button>
+          <button id = "three" onclick = "showText('3')">3</button>
+          <button id = "two" onclick = "showText('2')">2</button>
+          <button id = "one" onclick = "showText('1')">1</button>
+          <button id = "zero" onclick = "showText('0')">0</button>
+          <button id = "decimal" onclick = "showText('.')">.</button>
           <button id = "nd">N/D</button>
         </div>
         <div class = "operand-container">
-          <button id = "divide">÷</button>
-          <button id = "multiply">X</button>
-          <button id = "subtract">-</button>
-          <button id = "add">+</button>
-          <button id = "equals">=</button>
+          <button id = "divide" onclick = "showText(' / ')">÷</button>
+          <button id = "multiply" onclick = "showText(' * ')">*</button>
+          <button id = "subtract" onclick = "showText(' - ')">-</button>
+          <button id = "add" onclick = "showText(' + ')">+</button>
+          <button id = "equals" onclick = "Calculate()">=</button>
         </div>
       </div>
     </div>
+     <script src="calculator.js"></script>
   </body>
 </html>
 
