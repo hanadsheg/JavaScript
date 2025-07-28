@@ -38,8 +38,6 @@ This is a simple web-based calculator built with **HTML**, **CSS**, and **JavaSc
 
 ## 📝 To-Do / Improvements
 
-- [ ] Implement functionality for `%` button
-- [ ] Add a light theme (`light.css`)
 - [ ] Improve responsiveness for mobile view
 - [ ] Add error handling (e.g., division by zero)
 - [ ] Upload and connect `calculator.js` file
